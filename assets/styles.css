@@ -1,0 +1,28 @@
+:root {
+    --opria-bg: #f4f7fb;
+    --opria-surface: #ffffff;
+    --opria-primary: #154c79;
+    --opria-accent: #0f9d8a;
+    --opria-text: #1f2937;
+}
+
+.stApp {
+    background: radial-gradient(circle at top right, #e5f3ff 0%, var(--opria-bg) 45%);
+    color: var(--opria-text);
+}
+
+.block-container {
+    padding-top: 1.5rem;
+}
+
+div[data-testid="metric-container"] {
+    border: 1px solid #d9e3ef;
+    border-radius: 12px;
+    padding: 12px;
+    background: var(--opria-surface);
+}
+
+button[kind="primary"] {
+    background-color: var(--opria-primary);
+    border: none;
+}

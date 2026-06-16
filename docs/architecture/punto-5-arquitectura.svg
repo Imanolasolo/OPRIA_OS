@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-label="Diagrama de arquitectura lógica OPRIA OS">
+  <defs>
+    <style>
+      .title { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 15px 'Segoe UI', Arial, sans-serif; fill: #475569; }
+      .box { fill: #f8fafc; stroke: #1e293b; stroke-width: 2; rx: 12; ry: 12; }
+      .accent { fill: #ecfeff; stroke: #0e7490; }
+      .db { fill: #eef2ff; stroke: #3730a3; }
+      .label { font: 600 20px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .arrow { stroke: #334155; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+      .legend { font: 400 14px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#334155" />
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="520" fill="#ffffff"/>
+
+  <text x="60" y="56" class="title">OPRIA OS - Arquitectura Lógica (Punto 5)</text>
+  <text x="60" y="84" class="subtitle">Flujo principal entre presentación, dominio, persistencia y reglas de operación</text>
+
+  <!-- UI -->
+  <rect x="70" y="210" width="240" height="90" class="box accent"/>
+  <text x="190" y="265" text-anchor="middle" class="label">UI Streamlit</text>
+
+  <!-- Servicios -->
+  <rect x="420" y="210" width="300" height="90" class="box"/>
+  <text x="570" y="265" text-anchor="middle" class="label">Servicios de Dominio</text>
+
+  <!-- SQLite -->
+  <rect x="890" y="70" width="260" height="90" class="box db"/>
+  <text x="1020" y="125" text-anchor="middle" class="label">SQLite</text>
+
+  <!-- Reglas -->
+  <rect x="890" y="210" width="320" height="90" class="box"/>
+  <text x="1050" y="265" text-anchor="middle" class="label">Reglas de Autorización</text>
+
+  <!-- Motor -->
+  <rect x="890" y="350" width="360" height="90" class="box"/>
+  <text x="1070" y="405" text-anchor="middle" class="label">Motor de Flujo de Estados</text>
+
+  <!-- Arrows -->
+  <line x1="310" y1="255" x2="420" y2="255" class="arrow"/>
+  <line x1="720" y1="235" x2="890" y2="115" class="arrow"/>
+  <line x1="720" y1="255" x2="890" y2="255" class="arrow"/>
+  <line x1="720" y1="275" x2="890" y2="395" class="arrow"/>
+
+  <!-- Labels A-E -->
+  <circle cx="50" cy="255" r="16" fill="#0ea5e9"/>
+  <text x="50" y="261" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">A</text>
+
+  <circle cx="400" cy="255" r="16" fill="#0ea5e9"/>
+  <text x="400" y="261" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">B</text>
+
+  <circle cx="870" cy="115" r="16" fill="#4f46e5"/>
+  <text x="870" y="121" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">C</text>
+
+  <circle cx="870" cy="255" r="16" fill="#0ea5e9"/>
+  <text x="870" y="261" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">D</text>
+
+  <circle cx="870" cy="395" r="16" fill="#0ea5e9"/>
+  <text x="870" y="401" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#ffffff">E</text>
+
+  <text x="60" y="490" class="legend">A: UI Streamlit | B: Servicios de Dominio | C: SQLite | D: Reglas de Autorización | E: Motor de Flujo de Estados</text>
+</svg>
