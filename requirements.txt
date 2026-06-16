@@ -1,2 +1,2 @@
-streamlit==1.37.1
+streamlit>=1.40.0
 PyJWT==2.9.0
