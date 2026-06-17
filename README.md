@@ -79,7 +79,15 @@ opria_os_mvp/
    streamlit run app.py
    ```
 
-3. Credenciales iniciales:
+3. Ejecuta la landing comercial multipagina:
+
+   ```bash
+   streamlit run landing.py
+   ```
+
+   La landing comercial usa navegacion por botones en el sidebar y esta organizada por modulos en `modules/landing/`.
+
+4. Credenciales iniciales:
 
    - Usuario: `admin`
    - Password: `Admin123!`
